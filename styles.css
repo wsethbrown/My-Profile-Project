@@ -73,11 +73,11 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #222;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2);
 }
 .tag {
   background-color: #efefef;
@@ -92,7 +92,7 @@ header .profile-image:hover {
   color: yellow;
 }
 .card {
-  flex: 0 0 500px;
+  flex: 0 0 30%;
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
@@ -194,6 +194,17 @@ a.social:hover {
 }
 
 /* Styles for larger screens */
+@media screen and (min-width: 721px) and (max-width: 1199px){
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+}
+
 @media screen and (min-width: 720px) {
   
   .flex {
